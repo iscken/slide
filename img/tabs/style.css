@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(24, 63, 170);
+    font-family: sans-serif;
+}
+.isi{
+    width: 200px;
+    height: 300px;
+}
+.container{
+    min-width: 100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.header h1{
+    color: rgb(255, 166, 2);
+    padding: 40px 0;
+}
+.hbir{
+    color: rgb(255, 95, 2);
+    padding: 40px 0;
+}
+.tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.tabs input{
+    display: none;
+}
+.tabs label{
+    font-style: 25px;
+    border-bottom: 2px solid orange;
+    color: orange;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.tabs label:hover{
+    background: rgba(255, 166, 0, 0.356);
+    color: orange;
+}
+
+
+.tabs .iskos{
+    display: none;
+}
+#is1:checked~.isken{
+    background: rgba(255, 166, 0, 0.452);
+    color: orange;
+}
+#is1:checked~.iskos{
+    display: block;
+}
+
+.isi{
+    /* width: 500px; */
+    /* height: 700px; */
+}
+
+.tabs div{
+    display: none;
+}
+
+#alymke:checked~.tumar{
+    background: rgb(255, 0, 0);
+    color: orange;
+}
+#alymke:checked~.orozo{
+    display: block;
+}
